@@ -3,9 +3,8 @@
 
 int main(int argc, char **argv)
 {
-	int n = 0;
-	printf("N = ");
-	scanf("%d", &n);
-	printf("N = %d", n);
+	SDL_version SDLver;
+	SDL_VERSION(&SDLver);
+	printf("Test SDL %d.%d.%d\n", SDLver.major, SDLver.minor, SDLver.patch);
 	return 0;
 }
